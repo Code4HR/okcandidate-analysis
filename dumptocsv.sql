@@ -1,5 +1,6 @@
 --Search for $$PATH$$ and replace with desired output directory.
 
+/*
 --output popular to a csv
 copy (select survey_answer.id as survey_id, survey_answer.question_id, survey_answer.answer_id, question.question_text,
 	answer.answer_label, category.category_name, survey_answer.intensity, geography.geography_name  
@@ -15,8 +16,9 @@ on survey_answer.survey_response_id = survey_response.id
 join geography
 on survey_response.geography_id = geography.id)
 to '$$PATH$$/popular_results.csv' with csv header;
+*/
 
-
+/*
 --output candidates
 copy(select candidate.candidate_name, question.question_text, answer.answer_label, question.id as question_id, 
 	answer.id as answer_id, category.category_name, candidate.id as candidate_id, candidate.victory,
@@ -42,6 +44,7 @@ on candidate.candidate_name = real_results.candidate_name
 join okelection_results
 on answer.id = okelection_results.answer_id)
 to '$$PATH$$/candidate_results.csv' with csv header;
+*/
 
 --output results formatted for python analysis
 copy(select * from survey_answer)
