@@ -1,6 +1,6 @@
 # okcandidate-analysis
 
-Contains all data taken from results of Norfolk okcandidate election with SQL scripts to rearrange and output data into CSVs for data analysis. 
+Contains all data taken from results of Norfolk okcandidate election with SQL scripts to rearrange and output data into CSVs for data analysis. Tableau visualizations are (currently) in: https://public.tableau.com/profile/paulo8825#!/vizhome/okelectionNEW/CandIntbyCatBAR
 
 ## Data
 In the election_analysis directory are CSVs with the data from the candidates surveys, the website surveys, and the results of the real election. A Python Notebook `election_analysis.ipynb` with some initial analyses and lots of room for improvement/expansion runs through these CSVs.
