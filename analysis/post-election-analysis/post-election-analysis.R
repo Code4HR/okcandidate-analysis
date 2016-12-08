@@ -97,7 +97,7 @@ ggsave(filename=file.path('./graphs',
 
 # avg intensity by category ---------------------------------------------------------------------------
 
-plot_title <- 'intensity_distribution_question_category'
+plot_title <- 'intensity_distribution_by_question_category'
 p <- ggplot(survey_responses, 
        aes(x=as.factor(intensity), 
            fill=as.factor(intensity))) + 
